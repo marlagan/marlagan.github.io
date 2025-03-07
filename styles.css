@@ -299,7 +299,7 @@ body{
 }
 
 .section_title{
-    margin-top: 3%;
+    margin-top: 20px;
     display: flex;
     height: 10vh;
     width: 100%;
