@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin-top: 1%;
+    margin-left: 9%;
+    margin-right: 9%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFCF5;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+    background-color: #374375;
+    border-radius: 25px;
+    align-items: center;
+    filter: drop-shadow(1px 1px 1px #000000);
+    color: #FFFCF5;
+    font-family: "DM Serif Text", serif;
+    font-size: 18px;
+}
+
+.socials{
+
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: 5%;
+    gap: 1vh;
+    margin-top: 5px;
+}
+
+.linkedin{
+    margin-top: 1px;
+}
+
+.socials img{
+    height: 4.5vh;
+    width: 4.5vh;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials img:hover{
+    transform: scale(1.1); 
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+
+.sections {
+    gap: 4vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+}
+
+.sections a {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    color: #FFFCF5;
+    text-decoration: none;
+}
+
+.sections a:hover{
+    transform: scale(1.1); 
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.languages{
+    margin-left: 7%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFCF5;
+    width: 8vh;
+    border: none;
+    border-radius: 10px;
+
+  }
+
+.dropdown-content a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 2%;
+    font-family: "DM Serif Text", serif;
+    font-size: 18px;
+    color: #000000;
+    
+}
+
+.languages:hover .dropdown-content {
+    display: block;
+}
+
+.introduction{
+    height: 50vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.name h1:hover{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.abilities{
+    display: flex;
+    background-color: #374375;
+    height: 40vh;
+    border-radius: 25px;
+    filter: drop-shadow(1px 1px 1px #000000);
+    flex-direction: column;
+}
+
+.abilities h1{
+    justify-content: left;
+    color: #FFFCF5;
+    font-size: 22px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px #000000);
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.abilities_in{
+    margin-top: 1%;
+    margin-left: 5%;
+    align-items: center;
+    background-color: #BABDE2;
+    border-radius: 25px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.skills{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills img{
+    height: 150px;
+    width: auto;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+
+.skills h2{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.my_projects{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFCF5;
+    height: 230vh;
+    gap: 8vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.my_projects h1{
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #000000;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.my_projects h1:hover{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+
+.first_project{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000000;
+    gap: 7vh;
+}
+
+.project_title{
+    margin-bottom: 5%;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project_title:hover{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.video img{
+    width: 520px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.text p{
+    font-family: "Poppins", serif;
+    font-size: 14px;
+}
+
+
+.images1 video{
+    border-radius: 20px;
+}
+
+.github_project{
+    margin-top: 3%;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.github_project:hover {
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.second_project{
+    display: flex;
+    flex-direction: row;
+    gap: 7vh;
+
+}
+
+
+
+.third_project{
+    display: flex;
+    flex-direction: row;
+    gap: 7vh;
+}
+
+.fourth_project{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    align-items: center;
+}
+
+.github_img{
+    margin: 5%;
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.github_img:hover{
+    transform: scale(1.02); 
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.section_title{
+    margin-top: 3%;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section_title h1{
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.section_title h2:hover{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.section_email{
+    height: 30vh;
+}
+
+.section_email h2{
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+}
+
+.contacts h2{
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    margin: 0px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.text_contact h2{
+    font-family: "Poppins", serif;
+    font-size: 20px;
+   
+}
+
+.text_contact{
+    margin-bottom: 1%;
+    cursor: pointer;
+
+}
+.contacts img{
+    height: 40px;
+    width: auto;
+}
+
+.right_arrow{
+    cursor: pointer;
+}
+
+.left_arrow{
+    cursor: pointer;
+}
+
+.fourth_title{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+.github_img_fourth{
+    height: 50px;
+    width: auto;
+}
+
+.images4 {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    width: auto
+}
+
+.images4 img{
+    height: 40vh;
+    width: auto;
+}
+
+.contact_content{
+    margin-left: 10%;
+    gap: 0vh;
+}
+

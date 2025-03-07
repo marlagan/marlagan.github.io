@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="socials">
+            <a href="https://github.com/marlagan" target="_blank">
+                <img src="img/github-mark.png" href="https://github.com/marlagan" alt="GitHub" class="github">
+            </a>
+            <a href="https://www.linkedin.com/in/martyna-%C5%82aganowska-44b724338/" target="_blank">
+                <img src="img/linkedin.png" alt="Linkedin" class="linkedin">
+            </a>
+        </div>
+        <div class="sections">
+            <a href="#section1" lang="eng">Introduction</a>
+            <a href="#section1" lang="pl">Wstęp</a>
+            <a href="#section2" lang="eng">Skills</a>
+            <a href="#section2" lang="pl">Umiejętności</a>
+            <a href="#section3" lang="eng">Projects</a>
+            <a href="#section3" lang="pl">Projekty</a>
+            <a href="#section4" lang="eng">Contact</a>
+            <a href="#section4" lang="pl">Kontakt</a>
+        </div>
+        <div class="languages">
+                <p class="start">EN</p>
+                <div class="dropdown-content">
+                    <a class='english' href="#">EN</a>
+                    <a class='polish' href="#">PL</a>
+                    <!--<a class='korean' href="#">KR</a>-->
+                </div>
+        </div>
+    </div>
+    <div class="introduction" id="section1">
+        <div class="name" lang="eng">
+            <h1>Hi, I'm </h1>
+            <h1> Martyna</h1>
+        </div>
+        <div class="name" lang="pl">
+            <h1>Cześć, jestem</h1>
+            <h1> Martyna</h1>
+        </div>
+        <div class="description" lang="eng">
+            <p>I am a university student studying Computer Science
+            with a strong passion for Machine Learning and Deep Learning.
+            I enjoy exploring AI technologies, developing AI-driven applications, and continuously learning about the ceaseless advancements in this field.</p>
+        </div>
+        <div class="description" lang="pl">
+            <p>Jestem studentką informatyki, interesuję się uczeniem maszynowym i głębokim uczeniem. Interesuję się sztuczną inteligencją, tworzeniem aplikacji opartych na AI i nieustannym śledzeniem rozwoju tej technologii.</p>
+        </div>
+    </div>
+    <div class="abilities" id="section2">
+        <h1 lang = 'eng'>Which programming languages do I know?</h1>
+        <h1 lang = 'pl'>Jakie języki programowania znam?</h1>
+        <div class="abilities_in">
+            <img src="img/left_arrow.png" class="left_arrow">
+                <div class="skills">
+                    <img src="img/logo/python.png">
+                    <h2>Python</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/pytorch.png">
+                    <h2>PyTorch</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/java.png">
+                    <h2>Java</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/cplus.png">
+                    <h2>C++</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/html.png">
+                    <h2>Html</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/css.png">
+                    <h2>CSS</h2>
+                </div>
+                <div class="skills">
+                    <img src="img/logo/js.png">
+                    <h2>JavaScript</h2>
+                </div>
+            <img src="img/right_arrow.png" class="right_arrow">
+        </div>
+    </div>
+    <div class="my_projects" id="section3">
+        <h1 lang="eng">My projects</h1>
+        <h1 lang="pl">Moje projekty</h1>
+        <div class="first_project">
+            
+            <div class="text">
+                <h2 class="project_title" lang = "eng">Content-based recommendation system</h2>
+                <h2 class="project_title" lang = "pl">System rekomendacji oparty na treści</h2>
+
+                <p lang="eng">The movie recommendation system, which allows a user to discover movies that could pique their interest. A user-friendly interface written with HTML, CSS, and JavaScript, facilities the process of finding movies that match the user's interest and making it a better experience. Flask-based API backend coded in Python is responsible for creating the connection between the Frontend and the recommendation system. The technique that I implemented for the recommendation system is content-based filtering. </p>
+                <p lang="pl">System rekomendacji, który pomaga użytkownikowi odkrywać filmy dopasowane do jego zainteresowań. Intuicyjny interfejs stworzony w HTML, CSS i JavaScript sprawia, że proces wyszukiwania nowych tytułów jest wygodny i przyjemny. Backend oparto na bibliotece Flask, która umożliwia sprawną komunikację między frontendem a systemem rekomendacji. W implementacji zastosowano podejście content-based filtering, dzięki czemu rekomendacje są dostosowane do preferencji użytkownika.</p>
+                <a href="https://github.com/marlagan/movie_recs" target="_blank">
+                    <img src="img/github-mark.png" href="https://github.com/marlagan/movie_recs" alt="GitHub" class="github_img">
+                </a>
+            </div>
+          
+            <div class="images1">
+                <div class="video">
+                    <video width="700" height="500" controls>
+                        <source src="/img/movie_recs.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+
+        </div>
+        <div class="second_project">
+
+            <div class="images1">
+                <div class="video">
+                    <video width="700" height="500" controls>
+                        <source src="/img/AI_job_preperation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="text">
+                <h2 class="project_title" lang="eng">AI job preperation using Pytorch library</h2>
+                <h2 class="project_title" lang="pl">AI chatbot z użyciem bilbioteki PyTorch</h2>
+                <p lang="eng">A chatbot that allows users to prepare for jobs in the AI or Machine Learning related field. a custom JSON file containing questions and responses that a job candidate might find beneficial and easy to use. The JSON file was processed using Natural Language Processing(NLP) techniques, such as tokenizing sentences with the NLTK library, lowercasing words, and applying lemmatization to reduce words based on the context. After going through this process, all the questions were reconstructed into bags of words.model using the PyTorch library. The model consists of linear layers and was trained to recognize correct tags for questions. A user interface was written in HTML, CSS, and JavaScript, while the backend API uses Flask.</p>
+                <p lang="pl">Chatbot wspierający przygotowanie do pracy w sektorze AI. Zawiera własnoręcznie stworzony plik JSON z pytaniami i odpowiedziami, które mogą pojawić się podczas rozmowy kwalifikacyjnej. Plik ten został przetworzony za pomocą technik Natural Language Processing (NLP), takich jak tokenizacja zdań przy użyciu biblioteki NLTK, redukcja słów oraz lematyzacja, aby dostosować wyrazy do ich kontekstu. Po tej obróbce wszystkie pytania zostały przekształcone w bag of words.
+                    Model został zaimplementowany z wykorzystaniem biblioteki PyTorch. Składa się z warstw liniowych i został wytrenowany tak, aby przypisywać odpowiednie tagi do pytań użytkownika. Interfejs aplikacji został stworzony w HTML, CSS i JavaScript, natomiast backend działa w oparciu o Flask, zapewniając płynną komunikację między użytkownikiem a systemem.</p>
+                <a href="https://github.com/marlagan/job_preperation_chatbot" target="_blank">
+                    <img src="img/github-mark.png" href="https://github.com/marlagan/job_preperation_chatbot" alt="GitHub" class="github_img">
+                </a>
+            </div>
+      
+        </div>
+        <div class="fourth_project">
+            <div class="text">
+                <div class="fourth_title">
+                    <h2 class="project_title" lang="eng">Image Classification with CNN architecture</h2>
+                    <h2 class="project_title" lang="pl">Klaysfikacja obrazów z użyciem architektury CNN</h2>
+                    <a href="https://github.com/marlagan/image_classifcation/tree/main" target="_blank">
+                        <img src="img/github-mark.png" href="https://github.com/marlagan/image_classifcation/tree/main" alt="GitHub" class="github_img_fourth">
+                    </a>
+                </div>
+                <p lang="eng">An image classification model was trained to recognize fish species from a dataset.
+                A confusion matrix, a classification report, and charts visualizing loss and accuracy across multiple epochs were used to evaluate the model's performance and effectiveness. The model was created using Convolutional Neural Network (CNN) architecture and trained with a step learning rate and the Adam optimizer. Categorical Cross-Entropy was utilised as the loss function.</p>
+                <p lang="pl">
+                    Model został wytrenowany, aby rozpoznawać ryby na podstawie zbioru danych. Macierz pomyłek, raport klasyfikacji oraz wykresy przedstawiające zmiany dokładności i strat w kolejnych epokach zostały wykorzystane do oceny efektywności i wydajności modelu. Model został stworzony przy użyciu architektury Convolutional Neural Network (CNN) oraz optymalizatora Adam. Jako funkcję strat zastosowano Categorical Cross-Entropy.
+                </p>
+            </div>
+            <div class="images4">
+               <img src = "img\img_classification.png">
+               <img src = "img\img_classification1.png">
+               <img src = "img\img_classification3.png">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="section4">
+        <div class="section_title">
+            <h1 lang="eng">CONTACT</h1>
+            <h1 lang="pl">CONTACT</h1>
+        </div>
+            <div class="contact_content">
+                <h2 class="text_contact" lang="eng">Get in touch with me:</h2>
+                <h2 class="text_contact" lang="pl">Skontaktuj się ze mną:</h2>
+                <div class="contacts">
+                    <a href="https://www.freepik.com/icon/email_542689#fromView=keyword&page=1&position=0&uuid=abb40302-3a48-43ff-8eee-22a31e3e2876">
+                        <img src="img/email_542689.png" alt="mail">
+                    </a>
+                    <p>Email: martynaa.laganowska@gmail.com</p>
+                </div>
+            </div> 
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
