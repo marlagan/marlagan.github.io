@@ -5,16 +5,13 @@
     margin: 0;
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
 body{
- 
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-   
+    width: 100%;
     margin-top: 1%;
-    margin-left: 9%;
-    margin-right: 9%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #FFFCF5;
 }
@@ -22,45 +19,46 @@ body{
 .nav{
     display: flex;
     flex-direction: row;
-    height: 6vh;
+    height: 3.5rem;
     background-color: #374375;
-    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10rem;
     align-items: center;
-    filter: drop-shadow(1px 1px 1px #000000);
+    filter: drop-shadow(0.06rem 0.06rem 0.06rem #000000);
     color: #FFFCF5;
     font-family: "DM Serif Text", serif;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .socials{
-
     display: flex;
     justify-content: left;
     flex-direction: row;
-    margin-left: 5%;
-    gap: 1vh;
-    margin-top: 5px;
+    /*margin-left: 5%; */
+    gap: 0.675rem;
+    margin-top: 0.5px;
 }
 
 .linkedin{
-    margin-top: 1px;
+    margin-top: 0.18px;
 }
 
 .socials img{
-    height: 4.5vh;
-    width: 4.5vh;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
 
 .socials img:hover{
     transform: scale(1.1); 
-    filter: drop-shadow(1px 1px 1px #000000);
+    filter: drop-shadow(0.06rem 0.06rem 0.06rem #000000);
 }
 
 
 .sections {
-    gap: 4vh;
+    gap: 2.7rem;
     display: flex;
     flex-direction: row;
     margin-left: 50%;
@@ -75,7 +73,7 @@ body{
 
 .sections a:hover{
     transform: scale(1.1); 
-    filter: drop-shadow(1px 1px 1px #000000);
+    filter: drop-shadow(0.06rem 0.06rem 0.06rem #000000);
 }
 
 .languages{
@@ -89,9 +87,9 @@ body{
     display: none;
     position: absolute;
     background-color: #FFFCF5;
-    width: 8vh;
+    width: 5.4rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 
   }
 
@@ -102,7 +100,7 @@ body{
     justify-content: left;
     margin-left: 2%;
     font-family: "DM Serif Text", serif;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #000000;
     
 }
@@ -147,6 +145,8 @@ body{
 .abilities{
     display: flex;
     background-color: #374375;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 40vh;
     border-radius: 25px;
     filter: drop-shadow(1px 1px 1px #000000);
@@ -156,11 +156,12 @@ body{
 .abilities h1{
     justify-content: left;
     color: #FFFCF5;
-    font-size: 22px;
+    font-size: 1.2rem;
     cursor: pointer;
     filter: drop-shadow(1px 1px 1px #000000);
     margin-left: 5%;
     margin-top: 2%;
+    font-family: "Fraunces", serif;
 }
 
 .abilities_in{
@@ -192,16 +193,13 @@ body{
 .skills h2{
     font-family: "Poppins", serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
-
 
 .my_projects{
     display: flex;
     flex-direction: column;
     background-color: #FFFCF5;
-    height: 230vh;
-    gap: 8vh;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -209,7 +207,7 @@ body{
 .my_projects h1{
     font-family: "DM Serif Text", serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 2.7rem;
     color: #000000;
     margin-top: 5%;
     cursor: pointer;
@@ -218,7 +216,6 @@ body{
 .my_projects h1:hover{
     filter: drop-shadow(1px 1px 1px #000000);
 }
-
 
 .first_project{
     margin-top: 2%;
@@ -270,21 +267,22 @@ body{
 }
 
 .second_project{
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     gap: 7vh;
 
 }
 
-
-
 .third_project{
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     gap: 7vh;
 }
 
 .fourth_project{
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     gap: 7vh;
@@ -339,6 +337,7 @@ body{
 }
 
 .contact{
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
 }
@@ -410,3 +409,341 @@ body{
     gap: 0vh;
 }
 
+}
+
+@media only screen and (max-width: 600px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        height: 3.5rem;
+        background-color: #374375;
+        align-items: center;
+        filter: drop-shadow(0.06rem 0.06rem 0.06rem #000000);
+        color: #FFFCF5;
+        font-family: "DM Serif Text", serif;
+        font-size: 1.2rem;
+     
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: row;
+        /*margin-left: 5%; */
+        margin-top: 0.03rem;
+    }
+
+    .socials img{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sections {
+        display: none;
+    }
+    
+    .languages{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFFCF5;
+        width: 5.4rem;
+        border: none;
+        border-radius: 0.6rem;
+      }
+    
+    .dropdown-content a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 2%;
+        font-family: "DM Serif Text", serif;
+        font-size: 1.08rem;
+        color: #000000;
+        
+    }
+
+    
+    .languages{
+        margin-left: 7%;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFFCF5;
+        width: 5.4rem;
+        border: none;
+        border-radius: 0.6rem;
+    
+      }
+    
+    .dropdown-content a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 2%;
+        font-family: "DM Serif Text", serif;
+        font-size: 1.08rem;
+        color: #000000;
+        
+    }
+    
+    .languages:hover .dropdown-content {
+        display: block;
+    }
+    
+    .introduction{
+        width: 100%;
+        margin-left: 1%;
+        gap: 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        font-family: "Fraunces", serif;
+        font-weight: bold;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0px;
+        cursor: pointer;
+    }
+    
+    .name h1:hover{
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        font-family: "Poppins", serif;
+        font-size: 15px;
+        color: #000000;
+    }
+    
+    .abilities{
+        width: 100%;
+        display: flex;
+        background-color: #374375;
+        height: 40vh;
+        filter: drop-shadow(1px 1px 1px #000000);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .abilities h1{
+        justify-content: center;
+        color: #FFFCF5;
+        font-size: 1.2rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 1px 1px #000000);
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .abilities_in{
+        margin-top: 1%;
+        align-items: center;
+        background-color: #BABDE2;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        font-family: "Fraunces", serif;
+    }
+    .skills{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills img{
+        height: 150px;
+        width: auto;
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    .skills h2{
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    
+    .my_projects{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFCF5;
+        gap: 8vh;
+    }
+    
+    .my_projects h1{
+        font-family: "DM Serif Text", serif;
+        font-weight: bold;
+        font-size: 45px;
+        color: #000000;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+    
+    .my_projects h1:hover{
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    
+    .first_project{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000000;
+        gap: 3vh;
+        text-align: left;
+    }
+    
+    .project_title{
+        margin-bottom: 5%;
+        font-family: "Fraunces", serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .project_title:hover{
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    
+    .text p{
+        font-family: "Poppins", serif;
+        font-size: 14px;
+    }
+    
+    
+    .images1 video{
+        width: 100%;
+        height: auto;
+    }
+    
+    .github_project{
+        margin-top: 3%;
+        font-family: "Poppins";
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .github_project:hover {
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    .second_project{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 7vh;
+    
+    }
+        
+    .third_project{
+        display: flex;
+        flex-direction: row;
+        gap: 7vh;
+    }
+    
+    .fourth_project{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;;
+    }
+    
+    .github_img{
+        margin: 5%;
+        width: 50px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .github_img:hover{
+        transform: scale(1.02); 
+        filter: drop-shadow(1px 1px 1px #000000);
+    }
+    
+    .right_arrow{
+        cursor: pointer;
+    }
+    
+    .left_arrow{
+        cursor: pointer;
+    }
+    
+    .fourth_title{
+        display: flex;
+        flex-direction: row;
+        gap: 3vh;
+    }
+    
+    .github_img_fourth{
+        height: 50px;
+        width: auto;
+    }
+    
+    .images4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images4 img{
+        height: auto;
+        width: 75%;
+
+    }
+
+    .contacts{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacts img{
+        width: 5vh;
+        height: auto;
+    }
+   
+}
