@@ -76,7 +76,8 @@ body{
 }
 
 .languages{
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: 3vh;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -146,7 +147,6 @@ body{
     background-color: #374375;
     margin-left: 10%;
     margin-right: 10%;
-    height: 40vh;
     border-radius: 25px;
     filter: drop-shadow(1px 1px 1px #000000);
     flex-direction: column;
@@ -154,17 +154,19 @@ body{
 
 .abilities h1{
     justify-content: left;
+    
     color: #FFFCF5;
     font-size: 1.2rem;
     cursor: pointer;
     filter: drop-shadow(1px 1px 1px #000000);
+    margin-top: 1%;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-bottom: 2%;
     font-family: "Fraunces", serif;
 }
 
 .abilities_in{
-    margin-top: 1%;
+    margin-bottom: 4%;
     margin-left: 5%;
     align-items: center;
     background-color: #BABDE2;
@@ -183,16 +185,18 @@ body{
 }
 
 .skills img{
-    height: 150px;
+    height: 20vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    object-fit: contain;
     width: auto;
     filter: drop-shadow(1px 1px 1px #000000);
 }
 
-
 .skills h2{
     font-family: "Poppins", serif;
     font-weight: bold;
-    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 1.1rem;
 }
 
@@ -519,7 +523,6 @@ body{
         width: 100%;
         display: flex;
         background-color: #374375;
-        height: 40vh;
         filter: drop-shadow(1px 1px 1px #000000);
         flex-direction: column;
         align-items: center;
@@ -543,6 +546,7 @@ body{
         display: flex;
         flex-direction: row;
         font-family: "Fraunces", serif;
+        margin-bottom: 8%;
     }
     .skills{
         width: 90%;
@@ -550,6 +554,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     .skills img{
@@ -727,8 +733,5 @@ body{
         flex-direction: column;
         font-size: 0.8rem;
     }
-
-    
-
    
 }
