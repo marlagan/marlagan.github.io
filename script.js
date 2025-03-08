@@ -9,10 +9,8 @@ function changeSlide(number){
     for(let i = 0; i<slides_size; i++){
         if(i === number){
             slides[i].style.display = "flex";
-            console.log("checkkk")
         }else{
             slides[i].style.display = "none";
-            console.log("nothing");
         }
     }
 }

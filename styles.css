@@ -19,10 +19,10 @@ body{
 .nav{
     display: flex;
     flex-direction: row;
+    width: 80%;
     height: 3.5rem;
     background-color: #374375;
     margin-left: 10%;
-    margin-right: 10%;
     border-radius: 10rem;
     align-items: center;
     filter: drop-shadow(0.06rem 0.06rem 0.06rem #000000);
@@ -57,7 +57,7 @@ body{
 
 
 .sections {
-    gap: 2.7rem;
+    gap: 12%;
     display: flex;
     flex-direction: row;
     margin-left: 50%;
@@ -76,7 +76,7 @@ body{
 }
 
 .languages{
-    margin-left: 14vh;
+    margin-left: 15%;
     position: relative;
     display: inline-block;
     cursor: pointer;
